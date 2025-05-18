@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50 text-gray-800" >
+
+  <!-- Navbar -->
+  <header class="bg-white/80 backdrop-blur shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-purple-700">My Portfolio</h1>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a href="#Home" class="hover:text-purple-600 font-medium">Home</a>
+        <a href="#about" class="hover:text-purple-600 font-medium">About</a>
+        <a href="#projects" class="hover:text-purple-600 font-medium">Projects</a>
+        <a href="#contact" class="hover:text-purple-600 font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-purple-200 to-blue-200 py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold text-purple-900 mb-4">Hi, I’m Rohan</h2>
+      <p class="text-lg md:text-xl text-purple-800 mb-6">High school maker & Hack Club coder</p>
+      <a href="#projects" class="bg-purple-700 text-white px-6 py-2 rounded hover:bg-purple-800 transition shadow">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-16 bg-white/70 backdrop-blur">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-purple-700 mb-4">About Me</h3>
+      <p class="text-gray-700 text-lg">I'm a high school student who loves building things with hardware!! I’m an active member of Hack Club and enjoy working on creative tech projects in my free time.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="bg-purple-50 py-16">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-purple-700 mb-10 text-center">Hardware Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="bg-black rounded-xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center">
+        <h4 class="text-xl font-semibold text-red-700 mb-2">Ghost Device Creation</h4>
+        <p class="text-purple-700">Used an ESP32 with MAC address spoofing and RF sniffing to create an invisible IoT device for a stealth tech experiment.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-black rounded-xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center">
+        <h4 class="text-xl font-semibold text-red-700 mb-2">My main current project is LCD matrix display controlling</h4>
+        <p class="text-purple-700">Made the prototype of a display which is already implemented to make my relatives shop attractive </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-black rounded-xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center">
+        <h4 class="text-xl font-semibold text-red-700 mb-2">Servo controller</h4>
+        <p class="text-purple-700">I have created a web app where if slide the degrees we can see the servo motor rotating in real life</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Shocking things -->
+<section id="about" class="py-16 bg-white/70 backdrop-blur">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-purple-700 mb-4">My shocking experiance or learning</h3>
+      <p class="text-gray-700 text-lg">The most shocking thing I have learnt that a Wi-Fi integrated circuit board (ESP8266, etc) can actually spread their Wi-Fi but witout internet.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white/80 backdrop-blur">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-purple-700 mb-8">FAQ</h3>
+      <div class="space-y-4">
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="cursor-pointer font-semibold">What is Hack Club?</summary>
+          <p class="mt-2 text-gray-700">Hack Club is a global community of high schoolers who love to code. We build projects, organize events, and help each other grow.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="cursor-pointer font-semibold">How did you learn coding?</summary>
+          <p class="mt-2 text-gray-700">Mostly through online tutorials, Hack Club, and just trying out ideas. Building stuff is the best way to learn!</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sidebar (visible on desktop) -->
+  <aside class="hidden lg:block fixed top-24 right-0 w-64 bg-white shadow-lg rounded-l-xl p-4">
+    <h4 class="font-bold mb-2 text-purple-700">Quick Links</h4>
+    <ul class="space-y-2 text-purple-600">
+      <li><a href="#projects" class="hover:underline">Projects</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <li><a href="#about" class="hover:underline">About Me</a></li>
+    </ul>
+  </aside>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-tr from-pink-100 via-purple-100 to-blue-100">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-2xl font-bold text-purple-700 mb-4">Contact Me</h3>
+    <p class="text-lg text-gray-800 mb-6">Feel free to contact me anytime!</p>
+    <div class="text-md space-y-2 text-purple-800 font-medium">
+      <p>📧 Email: <a href="mailto:rohanseshasai.vasa@gmail.com" class="underline hover:text-purple-900">rohanseshasai.vasa@gmail.com</a></p>
+      <p>💬 Slack: Rohan Seshasai Vasa</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Rohan. Built with ❤️ using Tailwind CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
